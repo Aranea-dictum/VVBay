@@ -1,1 +1,220 @@
+/* experimental */
 
+
+.td_l,
+.td_r {
+ height: 18px;  
+ border-top: 1px solid rgb(204, 204, 204); 
+}
+
+.td_l p,
+.td_r p {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.td_l { 
+ width: 35%;
+ padding: 20px;
+ border-left: 0px;
+}
+
+.td_r {
+ width: 65%;
+  padding: 20px 0px 20px 20px;
+ border-left: 1px solid rgb(204, 204, 204);
+}
+
+.td_r li {
+  padding-bottom: 10px;
+}
+
+.th_spec {
+ box-sizing: inherit; 
+ padding: 20px; 
+ border-top: 1px solid rgb(204, 204, 204); 
+ font-family: &quot;PT Sans Narrow&quot;; 
+ letter-spacing: 0.05em; 
+ color: rgb(60, 114, 153); 
+ text-transform: uppercase; 
+ background: rgb(204, 204, 204);
+}
+
+.ex_accordion {
+  width: 100%;
+  overflow: hidden;
+}
+
+.ex_accordion__label,
+.ex_accordion__content {
+    width: 100%;
+
+}
+
+.ex_accordion__label {
+  display: block;
+  line-height: 1.666;
+  cursor: pointer;
+  position: relative;
+  transition: background 0.1s;
+  padding: 20px;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-color: #dadada;
+  box-sizing: border-box;
+} 
+
+.ex_accordion__label:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.ex_accordion__label::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+  width: 12px;
+  height: 6px;
+  background-image: url('data:image/svg+xml;utf8,<svg width="100" height="50" xmlns="http://www.w3.org/2000/svg"><polygon points="0,0 100,0 50,50" style="fill:%2300000099;" /></svg>');
+  background-size: contain;
+  transition: transform 0.4s;
+}
+
+.ex_accordion__content {
+  background: #ffffff;
+  display: none;
+}
+
+.ex_accordion__input {
+  display: none;
+}
+
+.ex_accordion__input:checked ~ .ex_accordion__content {
+  display: block;
+    border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-color: #dadada;
+  box-sizing: border-box;
+}
+
+.ex_accordion__input:checked ~ .ex_accordion__label::after {
+  transform: translateY(-50%) rotate(0.5turn);
+}
+
+*/
+/* */ 
+
+
+
+td,.td_l,.td_la,.td_r,.td_ra {
+    height: 18px
+}
+
+.td_l {
+    width: 35%
+}
+
+.td,.td_l,.td_la {
+    padding: 20px;
+    border-left: 0
+}
+
+.td_r {
+    width: 65%
+}
+
+.td_r,.td_ra {
+    padding: 20px 0 20px 20px;
+    border-left: 1px solid #ccc
+}
+
+.td_r li {
+    padding-bottom: 10px
+}
+
+.th_spec {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+    padding: 20px;
+    border-top: 1px solid #ccc;
+    letter-spacing: .05em;
+    color: #3c7299;
+    text-transform: uppercase;
+    background: #ccc
+}
+
+.desc_tbl {
+    height: auto;
+    width: 100%
+}
+
+.ex_accordion {
+    width: 100%;
+    overflow: hidden
+}
+
+.ex_accordion__content,
+.ex_accordion__label {
+    width: 100%
+}
+
+.ex_accordion__label,
+.ex_accordion__p {
+    line-height: 1.666;
+    position: relative;
+    -webkit-transition: background .1s;
+    transition: background .1s;
+    padding: 0 20 0 20;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.ex_accordion__label {
+    display: block;
+    cursor: pointer
+}
+
+.ex_accordion__label:hover {
+    background: rgba(0,0,0,.1)
+}
+
+.ex_accordion__label::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 20px;
+    width: 12px;
+    height: 6px;
+    background-image: url('data:image/svg+xml;utf8,<svg width="100" height="50" xmlns="http://www.w3.org/2000/svg"><polygon points="0,0 100,0 50,50" style="fill:%2300000099;" /></svg>');
+    background-size: contain;
+    -webkit-transition: -webkit-transform .4s;
+    transition: -webkit-transform .4s;
+    transition: transform .4s;
+    transition: transform .4s,-webkit-transform .4s
+}
+
+.ex_accordion__content {
+    background: #fff;
+    display: none
+}
+
+.ex_accordion__input {
+    display: none
+}
+
+.ex_accordion__input:checked~.ex_accordion__content {
+    display: block;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-color: #dadada;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.ex_accordion__input:checked~.ex_accordion__label::after {
+    -webkit-transform: translateY(-50%) rotate(.5turn);
+    transform: translateY(-50%) rotate(.5turn)
+}
