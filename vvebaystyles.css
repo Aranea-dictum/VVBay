@@ -26,7 +26,7 @@ td,
 .td_ra	{
 	border-top: 1px solid rgb(204, 204, 204);
 }
-    
+
 .td_l	{
 	width: 35%;
 }
@@ -72,83 +72,83 @@ td,
 
 /* Accordion Menu */
 .ex_accordion {
-  width: 100%;
-  overflow: hidden;
+	width: 100%;
+	overflow: hidden;
 }
 
 .ex_accordion__p {
-    padding: 0px 20px 0px 20px;
+	padding: 0px 20px 0px 20px;
 }
 
 .ex_accordion__content {
-  background: #ffffff;
-  display: none;
+	background: #ffffff;
+	display: none;
 }
 
 .ex_accordion__input {
-  display: none;
+	display: none;
 }
 
 .ex_accordion__input:checked ~ .ex_accordion__content {
-  display: block;
-  border-top: 1px solid;
-  border-bottom: 1px solid;
-  border-color: #dadada;
-  box-sizing: border-box;
+	display: block;
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+	border-color: #dadada;
+	box-sizing: border-box;
 }
 
 .ex_accordion__content,
 .ex_accordion__label {
-    width: 100%
+	width: 100%
 }
 
 .ex_accordion__label {
-  display: block;
-  line-height: 1.666;
-  cursor: pointer;
-  position: relative;
-  transition: background 0.1s;
-  padding: 20px;
-  border-top: 1px solid;
-  border-bottom: 1px solid;
-  border-color: #dadada;
-  box-sizing: border-box;
+	display: block;
+	line-height: 1.666;
+	cursor: pointer;
+	position: relative;
+	transition: background 0.1s;
+	padding: 20px;
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+	border-color: #dadada;
+	box-sizing: border-box;
 } 
 
 .ex_accordion__input:checked~.ex_accordion__label {
-  background: rgba(0, 0, 0, 0.1);
+	background: rgba(0, 0, 0, 0.1);
 }
 
 .ex_accordion__label:hover {
-  background: rgba(0, 0, 0, 0.1);
+	background: rgba(0, 0, 0, 0.1);
 }
 
 .ex_accordion__label::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    right: 20px;
-    width: 12px;
-    height: 6px;
-    background-image: url('data:image/svg+xml;utf8,<svg width="100" height="50" xmlns="http://www.w3.org/2000/svg"><polygon points="0,0 100,0 50,50" style="fill:%2300000099;" /></svg>');
-    background-size: contain;
-    -webkit-transition: -webkit-transform .4s;
-    transition: -webkit-transform .4s;
-    transition: transform .4s;
+	content: "";
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	right: 20px;
+	width: 12px;
+	height: 6px;
+	background-image: url('data:image/svg+xml;utf8,<svg width="100" height="50" xmlns="http://www.w3.org/2000/svg"><polygon points="0,0 100,0 50,50" style="fill:%2300000099;" /></svg>');
+	background-size: contain;
+	-webkit-transition: -webkit-transform .4s;
+	transition: -webkit-transform .4s;
+	transition: transform .4s;
 }
 
 .ex_accordion__input:checked~.ex_accordion__content {
-    display: block;
-    border-top: 1px solid;
-    border-bottom: 1px solid;
-    border-color: #dadada;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box
+	display: block;
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+	border-color: #dadada;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box
 }
 
 .ex_accordion__input:checked~.ex_accordion__label::after {
-    -webkit-transform: translateY(-50%) rotate(0.5turn);
-    transform: translateY(-50%) rotate(0.5turn)
+	-webkit-transform: translateY(-50%) rotate(0.5turn);
+	transform: translateY(-50%) rotate(0.5turn)
 }
